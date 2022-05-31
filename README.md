@@ -16,11 +16,7 @@ You need to have the following installed on your machine
 
 1. Java JDK
 2. Gradle
-3. JDK
-4. Maven
-5. Java IDE (Intellij)
-6. Postman
-7. Postgres
+3. Java IDE (AndroidStudio)
 
 ### Setup and Installation
 
