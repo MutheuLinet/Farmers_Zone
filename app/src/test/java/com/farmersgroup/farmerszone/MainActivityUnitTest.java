@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.farmersgroup.farmerszone.ui.MainActivity;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

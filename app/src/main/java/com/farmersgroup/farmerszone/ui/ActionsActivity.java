@@ -1,4 +1,4 @@
-package com.farmersgroup.farmerszone;
+package com.farmersgroup.farmerszone.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.farmersgroup.farmerszone.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,7 +36,7 @@ public class ActionsActivity extends AppCompatActivity {
         mBtnFruits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActionsActivity.this, FruitActivity.class);
+                Intent intent = new Intent(ActionsActivity.this, BrowseAllActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.farmersgroup.farmerszone;
+package com.farmersgroup.farmerszone.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.farmersgroup.farmerszone.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
