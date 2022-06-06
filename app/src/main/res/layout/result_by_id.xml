@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentCardId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/textTfvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="7dp"
+            android:text="Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageCard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textTfvName"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/textBotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageCard"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Botanical Name Lorem ipsum dolor dfghjsfvgth jkndfghjyk fdghjkfgh sit" />
+
+        <TextView
+            android:id="@+id/textOthName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textBotName"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textOthName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/textUses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/textHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUses"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/textPropagation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHealth"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Other Names Loco laboris nisi ut aliquip ex ea commodo consequat." />
+
+    <TextView
+        android:id="@+id/textClimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPropagation"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:text="Other Names quat." />
+
+
+</RelativeLayout>

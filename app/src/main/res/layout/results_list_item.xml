@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/parent"
-    android:layout_width="wrap_content"
+    android:id="@+id/parentCard"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
-    android:layout_margin="10dp">
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#FAF9F6">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,9 +29,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textTfvName"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
+            android:paddingLeft="15dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="7dp"
-            android:text="Botanical Name Lorem ipsum dolor sit"
+            android:text="Botanical Name Lorem ipsum dolor dfghjsfvgth jkndfghjyk fdghjkfgh sit"
             android:textStyle="italic" />
 
         <TextView
@@ -39,13 +41,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textBotName"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="7dp"
+            android:paddingLeft="15dp"
             android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             android:textStyle="italic" />
 
         <ImageView
-            android:id="@+id/image"
+            android:id="@+id/imageCard"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_below="@id/textOthName"

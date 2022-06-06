@@ -8,14 +8,17 @@
     android:padding="70dp"
     tools:context=".ui.MainActivity">
 
+
         <TextView
-            android:id="@+id/textViewKaribu"
+            android:id="@+id/textViewSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
             android:text="@string/karibu"
-            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,19 +40,19 @@
                     android:id="@+id/btnFruit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="FRUITS" />
+                    android:text="@string/fruits" />
 
                 <Button
                     android:id="@+id/btnNuts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="NUTS" />
+                    android:text="@string/nuts" />
 
                 <Button
                     android:id="@+id/btnHerbs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="HERBS" />
+                    android:text="@string/herbs" />
         </LinearLayout>
 
 
