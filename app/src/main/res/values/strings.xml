@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Farmers Zone</string>
     <string name="karibu">Karibu</string>
+    <string name="fruits">FRUITS</string>
+    <string name="nuts">NUTS</string>
+    <string name="herbs">HERBS</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_account">My Account</string>
+    <string name="menu_about">About</string>
 </resources>
