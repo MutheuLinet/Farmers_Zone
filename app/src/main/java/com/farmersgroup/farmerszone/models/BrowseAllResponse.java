@@ -10,7 +10,7 @@ public class BrowseAllResponse {
 
     @SerializedName("results")
     @Expose
-    private List<com.farmersgroup.farmerszone.models.Result> results = null;
+    private List<ResultById> results = null;
     @SerializedName("tfvcount")
     @Expose
     private Integer tfvcount;
@@ -27,17 +27,17 @@ public class BrowseAllResponse {
      * @param tfvcount
      * @param results
      */
-    public BrowseAllResponse(List<com.farmersgroup.farmerszone.models.Result> results, Integer tfvcount) {
+    public BrowseAllResponse(List<ResultById> results, Integer tfvcount) {
         super();
         this.results = results;
         this.tfvcount = tfvcount;
     }
 
-    public List<com.farmersgroup.farmerszone.models.Result> getResults() {
+    public List<ResultById> getResults() {
         return results;
     }
 
-    public void setResults(List<com.farmersgroup.farmerszone.models.Result> results) {
+    public void setResults(List<ResultById> results) {
         this.results = results;
     }
 

@@ -4,8 +4,10 @@ package com.farmersgroup.farmerszone.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 
-public class Result {
+
+public class Result implements Serializable {
 
     @SerializedName("tfvname")
     @Expose

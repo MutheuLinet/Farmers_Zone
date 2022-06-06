@@ -1,16 +1,17 @@
 package com.farmersgroup.farmerszone.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 
 import com.farmersgroup.farmerszone.R;
+import com.farmersgroup.farmerszone.adapters.ResultsRecViewAdapter;
 import com.farmersgroup.farmerszone.models.BrowseAllResponse;
-import com.farmersgroup.farmerszone.models.Result;
+import com.farmersgroup.farmerszone.models.ResultById;
 import com.farmersgroup.farmerszone.network.Api;
 import com.farmersgroup.farmerszone.network.ApiClient;
 
@@ -26,46 +27,39 @@ public class BrowseAllActivity extends AppCompatActivity {
 
     public static final String TAG = BrowseAllActivity.class.getSimpleName();
 
-    @BindView(R.id.fruitList) ListView mFruitList;
-
-    private String[] fruits = {"Banana","Orange", "Cucumber", "Mango", "Pineapple", "Passion", "Strawberry", "Grape", "Apple" };
+    @BindView(R.id.resultsRecycleView) RecyclerView mResultsRecycleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_browse_all);
+        setContentView(R.layout.activity_browse_all_two);
         ButterKnife.bind(this);
-//        ArrayAdapter adapter = new ArrayAdapter(BrowseAllActivity.this, android.R.layout.simple_list_item_1, fruits);
-//        mFruitList.setAdapter(adapter);
 
         Api client = ApiClient.getClient();
-        Call<BrowseAllResponse> call = client.getAllItems("all");
+        Call<BrowseAllResponse> call = client.getAllItems("all"); //search=all
 
         call.enqueue(new Callback<BrowseAllResponse>() {
-            
             @Override
             public void onResponse(Call<BrowseAllResponse> call, Response<BrowseAllResponse> response) {
                 Log.d(TAG, "onResponse: resp");
-
                 if (response.isSuccessful()){
 
-                    List<Result> allItemsList = response.body().getResults();
-                    String[] fruits = new String[allItemsList.size()];
-                    for (int i=0; i< fruits.length; i++){
-                        fruits[i]=allItemsList.get(i).getTfvname();
-                        Log.d("fruits", "Value" + "error");
-                    }
-                    ArrayAdapter adapter = new ArrayAdapter(BrowseAllActivity.this, android.R.layout.simple_list_item_1, fruits);
-                    mFruitList.setAdapter(adapter);
-                }
-                         }
+                    List<ResultById> allItemsList = response.body().getResults();
 
+                    ResultsRecViewAdapter adapter = new ResultsRecViewAdapter(allItemsList, BrowseAllActivity.this);
+                    adapter.setResultList(allItemsList);
+                    mResultsRecycleView.setAdapter(adapter);
+                    mResultsRecycleView.setLayoutManager(new LinearLayoutManager(BrowseAllActivity.this));//getApplicationContext()
+                }
+            }
             @Override
             public void onFailure(Call<BrowseAllResponse> call, Throwable t) {
                 Log.e("Error Message", "onFailure: ",t );
             }
         });
     }
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

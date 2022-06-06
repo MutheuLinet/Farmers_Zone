@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 
 public class ActionsActivity extends AppCompatActivity {
 
-    @BindView(R.id.textViewKaribu) TextView mTextViewKaribu;
+    @BindView(R.id.textViewSelect) TextView mTextViewKaribu;
 
     @BindView(R.id.btnFruit) Button mBtnFruits;
     @BindView(R.id.btnNuts) Button mBtnNuts;
@@ -54,5 +54,10 @@ public class ActionsActivity extends AppCompatActivity {
                 Toast.makeText(ActionsActivity.this, "Herbs Coming Soon", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
     }
 }
