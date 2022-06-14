@@ -67,7 +67,10 @@ public class ResultsRecViewAdapter extends RecyclerView.Adapter<ResultsRecViewAd
         this.resultList = resultList;
         notifyDataSetChanged();
     }
-
+    public void setFilteredResultList(List<ResultById> resultListFiltered) {
+        this.resultList = resultListFiltered;
+        notifyDataSetChanged();
+    }
     public class Viewholder extends RecyclerView.ViewHolder{
         @BindView(R.id.textTfvName) TextView mTextTfvName;
         @BindView(R.id.textBotName) TextView mTextBotName;
