@@ -3,9 +3,12 @@ package com.farmersgroup.farmerszone.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,12 +19,13 @@ import butterknife.ButterKnife;
 
 public class ActionsActivity extends AppCompatActivity {
 
-    @BindView(R.id.textViewSelect) TextView mTextViewKaribu;
+//    @BindView(R.id.textViewSelect) TextView mTextViewKaribu;
 
     @BindView(R.id.btnFruit) Button mBtnFruits;
     @BindView(R.id.btnNuts) Button mBtnNuts;
     @BindView(R.id.btnHerbs) Button mBtnHerbs;
 
+    private static final String TAG = ActionsActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +33,9 @@ public class ActionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_actions);
         ButterKnife.bind(this);
 
-        Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        mTextViewKaribu.setText("Hi, " + name + ". "+ "Please select a Category.");
+//        Intent intent = getIntent();
+//        String name = intent.getStringExtra("name");
+//        mTextViewKaribu.setText("Hi, " + name + ". "+ "Please select a Category.");
 
         mBtnFruits.setOnClickListener(new View.OnClickListener() {
             @Override
