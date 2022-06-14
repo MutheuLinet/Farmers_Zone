@@ -20,4 +20,9 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_here_to_start">Click Here To Start</string>
+    <string name="log_out">Log Out</string>
+    <string name="my_account">My Account</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
 </resources>
