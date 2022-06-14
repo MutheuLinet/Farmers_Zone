@@ -8,7 +8,7 @@ Linet Mutheu
 
 ### Description
 
-This mobile application is currently in development. A user can so far input their name, select a category such as fruits from a list of categories, and have a list of fruits displayed.
+This mobile application is currently in development. A user can so far register and login to the application, select a category such as fruits from a list of categories, and have a list of fruits displayed, search any item they want, view and edit their account details and logout from the application.
 
 ### Prerequisites
 
