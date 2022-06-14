@@ -4,10 +4,10 @@
     android:id="@+id/parentCardId"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
+    android:padding="8dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
-    android:layout_margin="10dp">
+    android:layout_margin="8dp">
 
 
         <TextView
@@ -30,70 +30,144 @@
             android:src="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/textBotName"
+            android:id="@+id/botNameLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageCard"
+            android:text="Botanical Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_centerHorizontal="false"
             android:layout_marginStart="5dp"
             android:layout_marginTop="7dp"
+            android:layout_below="@id/imageCard"/>
+
+
+        <TextView
+            android:id="@+id/textBotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botNameLabel"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:textStyle="italic"
             android:text="Botanical Name Lorem ipsum dolor dfghjsfvgth jkndfghjyk fdghjkfgh sit" />
 
+        <TextView
+            android:id="@+id/othNameLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Names"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/textBotName"/>
         <TextView
             android:id="@+id/textOthName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textBotName"
+            android:layout_below="@id/othNameLabel"
             android:layout_centerHorizontal="false"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="7dp"
             android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/textOthName"/>
 
         <TextView
             android:id="@+id/textDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textOthName"
+            android:layout_below="@id/descriptionLabel"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="7dp"
             android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+
+        <TextView
+            android:id="@+id/usesLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uses"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/textDescription"/>
         <TextView
             android:id="@+id/textUses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textDescription"
+            android:layout_below="@id/usesLabel"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="7dp"
             android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/healthLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Benefits"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/textUses"/>
         <TextView
             android:id="@+id/textHealth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textUses"
+            android:layout_below="@id/healthLabel"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/propagationLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propagation Details"
+            android:textStyle="bold"
             android:layout_centerHorizontal="false"
             android:layout_marginStart="5dp"
             android:layout_marginTop="7dp"
-            android:text="Other Names Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+            android:layout_below="@id/textHealth"/>
         <TextView
             android:id="@+id/textPropagation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textHealth"
+            android:layout_below="@id/propagationLabel"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="5dp"
+            android:text="Other Names Loco laboris nisi ut aliquip ex ea commodo consequat." />
+        <TextView
+            android:id="@+id/climateLabel"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Climate Conditions"
+            android:textStyle="bold"
             android:layout_centerHorizontal="false"
             android:layout_marginStart="5dp"
             android:layout_marginTop="7dp"
-            android:text="Other Names Loco laboris nisi ut aliquip ex ea commodo consequat." />
-
+            android:layout_below="@id/textPropagation"/>
     <TextView
         android:id="@+id/textClimate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textPropagation"
+        android:layout_below="@id/climateLabel"
         android:layout_centerHorizontal="false"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="7dp"
         android:text="Other Names quat." />
 
 
