@@ -3,7 +3,6 @@ package com.farmersgroup.farmerszone;
 import static org.junit.Assert.assertEquals;
 
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.farmersgroup.farmerszone.ui.MainActivity;
 
@@ -26,17 +25,15 @@ import org.robolectric.RobolectricTestRunner;
                     .resume()
                     .get();
         }
-
         @Test
-        public void validateStartInt(){
-            EditText textInputLayout = mainActivity.findViewById(R.id.editTextName);
-            assertEquals("Enter Your Name",textInputLayout.getHint());
+        public void welcomeButton(){
+            Button button = mainActivity.findViewById(R.id.textViewWelcome);
+            assertEquals("Welcome To Farmer's Zone!", button.getText());
         }
-
         @Test
         public void validateButton(){
-            Button button = mainActivity.findViewById(R.id.buttonName);
-            assertEquals("Submit",button.getText());
+            Button button = mainActivity.findViewById(R.id.buttonStart);
+            assertEquals("Click Here To Start",button.getText());
         }
     }
 
