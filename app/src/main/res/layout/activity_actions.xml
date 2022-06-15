@@ -6,24 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="70dp"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MainActivity"
+    android:background="@drawable/blue">
 
 
         <TextView
             android:id="@+id/textViewSelect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
             android:gravity="center_horizontal"
             android:text="@string/category"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="45sp"
             android:textStyle="bold"
-            android:fontFamily="@font/aclonica"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.029" />
+            app:layout_constraintVertical_bias="0.162" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -36,22 +38,33 @@
             app:layout_constraintHorizontal_bias="0.787"
             app:layout_constraintStart_toStartOf="parent">
 
-                <Button
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                     android:id="@+id/btnFruit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_700"
                     android:text="@string/fruits" />
 
-                <Button
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                     android:id="@+id/btnNuts"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_700"
                     android:text="@string/nuts" />
 
-                <Button
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                     android:id="@+id/btnHerbs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/purple_700"
                     android:text="@string/herbs" />
 
         </LinearLayout>
