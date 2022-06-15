@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case android.R.id.home:
+            case android.R.id.home: //check drawer_layout id
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }

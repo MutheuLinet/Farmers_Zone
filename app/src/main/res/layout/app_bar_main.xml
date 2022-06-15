@@ -15,20 +15,19 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/purple_700"
             app:menu="@menu/activity_main_drawer"
             app:popupTheme="@style/Theme.NavApplication.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
         tools:context=".ui.MainActivity"
-        android:id="@+id/home">
+        android:id="@+id/home"
+        android:background="@drawable/search_view_bg"
+        >
 
         <ImageView
             android:id="@+id/imageView"
@@ -37,33 +36,36 @@
             android:background="@drawable/search_view_bg"
             android:backgroundTint="@color/ic_launcher_background"
             android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/farm1"
-            tools:layout_editor_absoluteY="66dp" />
+            app:srcCompat="@drawable/fzone" />
 
-        <Button
+        <TextView
             android:id="@+id/textViewWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/aclonica"
+            android:fontFamily="@font/bubblegum_sans"
             android:gravity="center_horizontal"
             android:text="Welcome To Farmer's Zone!"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="60sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.356" />
+            app:layout_constraintVertical_bias="0.179" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonStart"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="342dp"
+            app:cornerRadius="15dp"
             android:text="@string/click_here_to_start"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,14 +78,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/log_out"
+            app:cornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonStart"
-            app:layout_constraintVertical_bias="0.744" />
+            app:layout_constraintVertical_bias="0.269" />
 
-<!--        <Button-->
+        <!--        <Button-->
 <!--            android:id="@+id/userBtn"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
