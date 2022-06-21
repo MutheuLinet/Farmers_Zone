@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "417261855963",
+    "firebase_url": "https://farmers-zone-default-rtdb.firebaseio.com",
     "project_id": "farmers-zone",
     "storage_bucket": "farmers-zone.appspot.com"
   },
