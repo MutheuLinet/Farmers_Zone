@@ -40,6 +40,8 @@ public class ResultById implements Serializable {
     @Expose
     private String health;
 
+    private String pushId;
+
     /**
      * No args constructor for use in serialization
      * 
@@ -74,6 +76,13 @@ public class ResultById implements Serializable {
         this.health = health;
     }
 
+    public String getPushId() {
+        return pushId;
+    }
+
+    public void setPushId(String pushId) {
+        this.pushId = pushId;
+    }
     public String getTfvname() {
         return tfvname;
     }

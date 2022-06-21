@@ -5,8 +5,11 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -16,6 +19,7 @@ import com.farmersgroup.farmerszone.models.BrowseAllResponse;
 import com.farmersgroup.farmerszone.models.ResultById;
 import com.farmersgroup.farmerszone.network.Api;
 import com.farmersgroup.farmerszone.network.ApiClient;
+import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,14 +40,15 @@ public class BrowseAllActivity extends AppCompatActivity {
 //    private SharedPreferences.Editor mEditor;
 
     @BindView(R.id.resultsRecycleView) RecyclerView mResultsRecycleView;
-    @BindView(R.id.searchView)
-    androidx.appcompat.widget.SearchView searchView;
+    @BindView(R.id.searchView) androidx.appcompat.widget.SearchView searchView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browse_all);
         ButterKnife.bind(this);
+
 
         searchView.clearFocus();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

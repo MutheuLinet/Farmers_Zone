@@ -1,23 +1,18 @@
 package com.farmersgroup.farmerszone.adapters;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.farmersgroup.farmerszone.R;
 import com.farmersgroup.farmerszone.models.ResultById;
-import com.farmersgroup.farmerszone.ui.BrowseByIdActivity;
 
 import java.util.List;
 
@@ -52,7 +47,11 @@ public class ResultByIdRecViewAdapter extends RecyclerView.Adapter<ResultByIdRec
             return resultList.size();
         }
 
-        public void setResultList(List<ResultById> resultList) {
+    public static List<ResultById> getResultList(List<ResultById> resultList) {
+        return resultList;
+    }
+
+    public void setResultList(List<ResultById> resultList) {
             this.resultList = resultList;
             notifyDataSetChanged();
         }
