@@ -53,3 +53,4 @@ This project is under the [MIT](LICENSE) licence
 ### Copyright
 
 Copyright (c) 2022 Linet Mutheu
+<img width="1080" height="1080" alt="image" src="https://github.com/user-attachments/assets/634e4952-81b3-46be-bfde-c06226aa4e93" />
